@@ -67,4 +67,7 @@ The **Random Forest model** was the best-performing algorithm for this project.
 * **Impact:** By utilizing this model, the Ministry of Education can proactively allocate resources to the 74% of schools identified, significantly narrowing the gap in provincial mathematics standards.
 
 ---
-*Developed as part of an evidence-based approach to improving student outcomes in Ontario.*
+
+## ✍️ Author
+**Rossini Martyr** [https://www.linkedin.com/in/rossinimartyr/]
+

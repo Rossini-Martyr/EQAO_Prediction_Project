@@ -12,6 +12,18 @@ The primary objective of this project is to use current academic data to predict
 
 ---
 
+## 🚀 Interactive Deployment
+To make these predictions actionable, I developed a custom **Streamlit Dashboard**. This interface allows administrators to input school characteristics and receive a real-time risk assessment, complete with a natural language explanation of the key features driving the model's decision.
+
+![EQAO Risk Prediction Tool](EQAO_Risk_Prediction.gif)
+
+### Dashboard Features:
+* **Predictive Engine:** Powered by an optimized Random Forest Pipeline including automated scaling and imputation.
+* **Explainable AI:** Integrated **SHAP (Shapley Additive Explanations)** logic to translate complex model weights into clear, readable risk drivers.
+* **Dynamic Inputs:** Sliders for socio-economic and performance metrics to test "What-If" scenarios and school profiles.
+
+---
+
 ## 🏗️ Methodology & Classification
 This is a **binary classification problem**. We engineered a target variable, `High Risk School`, where:
 * **True (1.0):** Pass rate < 50%
@@ -51,9 +63,9 @@ For this specific use case, we focused on the **True Positive Rate (TPR)** and *
 | **Final Recall** | **0.684** | 0.672 | 0.623 |
 
 ### Key Contributing Features
-The following 5 features were found to have the biggest impact on predicting 'At-Risk Schools'
+The following 5 features were found to have the biggest impact on predicting 'At-Risk Schools':
 1. Percentage of students receiving special education services
-2. Enrolment
+2. Total Enrolment
 3. Percentage of students whose parents have no degree, diploma, or certificate
 4. Percentage of school-aged children who live in low-income households
 5. Most recent 3-year trend in EQAO scores
@@ -69,5 +81,4 @@ The **Random Forest model** was the best-performing algorithm for this project.
 ---
 
 ## ✍️ Author
-**Rossini Martyr** [https://www.linkedin.com/in/rossinimartyr/]
-
+**Rossini Martyr** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/rossinimartyr/)

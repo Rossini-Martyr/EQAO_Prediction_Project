@@ -13,7 +13,7 @@ The primary objective of this project is to use current academic data to predict
 ---
 
 ## 🚀 Interactive Deployment
-To make these predictions actionable, I developed a custom **Streamlit Dashboard**. This interface allows administrators to input school characteristics and receive a real-time risk assessment, complete with a natural language explanation of the key features driving the model's decision.
+To make these predictions actionable, I developed a custom **Streamlit Dashboard**. This interface allows administrators to input school characteristics and receive a real-time risk assessment, complete with an explanation of the key features driving the model's decision.
 
 ![EQAO Risk Prediction Tool](EQAO_Risk_Prediction.gif)
 

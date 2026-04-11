@@ -20,17 +20,17 @@ To make these predictions actionable, I developed a custom **Streamlit Dashboard
 ### Dashboard Features:
 * **Predictive Engine:** Powered by an optimized Random Forest Pipeline including automated scaling and imputation.
 * **Explainable AI:** Integrated **SHAP (Shapley Additive Explanations)** logic to translate complex model weights into clear, readable risk drivers.
-* **Dynamic Inputs:** Sliders for socio-economic and performance metrics to test "What-If" scenarios and school profiles.
+* **Dynamic Inputs:** Sliders for socio-economic and performance metrics to test different scenarios and school profiles.
 
 ---
 
 ## 🏗️ Methodology & Classification
-This is a **binary classification problem**. We engineered a target variable, `High Risk School`, where:
+This is a **binary classification problem**. I engineered a target variable, `High Risk School`, where:
 * **True (1.0):** Pass rate < 50%
 * **False (0.0):** Pass rate ≥ 50%
 
 ### Machine Learning Algorithms Used
-We evaluated four distinct models to determine which provided the most reliable predictions:
+I evaluated four distinct models to determine which provided the most reliable predictions:
 
 1. **Logistic Regression:** A baseline model used for its simplicity and clear relationship between input features and binary outcomes.
 2. **K-Nearest Neighbours (kNN):** A proximity-based model that classifies schools based on the majority vote of the nearest "cluster" of data points.
@@ -54,7 +54,7 @@ While accuracy measures overall correctness, it was used here as a primary filte
 | kNN Classifier | 0.617 |
 
 ### Detailed Classification Metrics
-For this specific use case, we focused on the **True Positive Rate (TPR)** and **False Negative Rate (FNR)** to ensure we are capturing as many high-risk schools as possible.
+For this specific use case, I focused on the **True Positive Rate (TPR)** and **False Negative Rate (FNR)** to ensure I am capturing as many high-risk schools as possible.
 
 | Metric | Random Forest | XGBoost | Logistic Regression |
 | :--- | :--- | :--- | :--- |
@@ -78,6 +78,8 @@ The **Random Forest model** was the best-performing algorithm for this project.
 * **Predictive Power:** It correctly identifies high-risk schools **74%** of the time.
 * **Impact:** By utilizing this model, the Ministry of Education can proactively allocate resources to the 74% of schools identified, significantly narrowing the gap in provincial mathematics standards.
 
+
+Open `EQAO_Prediction_Project.ipynb` to see the full pipeline from data cleaning to visualization.
 ---
 
 ## ✍️ Author
